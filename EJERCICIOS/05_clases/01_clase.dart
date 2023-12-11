@@ -3,7 +3,11 @@ import 'clases/persona.dart';
 void main(List<String> args) {
   //final persona = new Persona(33, posicional de la clase persona  nombre: propiedad por nombre de la clase persona 'José Cárcamo'); se puede poner como final si la variable no va a cambiar o como Persona persona =new Persona();
   final persona = new Persona(33,
-      'José Cárcamo'); //persona por propiedades posicionales en el constructor de clase Persona
+      nombre:'José Cárcamo'); //persona por propiedades posicionales en el constructor de clase Persona
+  final persona3 = new Persona(30,
+      nombre:'José');
+  final persona2 = new Persona.persona30(
+      'Melissa Flores'); //persona por propiedades posicionales en el constructor de clase Persona
 //CONSTRUCTOR
   // persona.nombre = 'Jose';
   // persona.edad = 33;
@@ -15,8 +19,10 @@ void main(List<String> args) {
   //   ..edad = 33;
   //..bio = 'Guatemala'; //propiedad privada de la clase persona
 //Con un set
-  // persona.bio = "Zona 1";
+   persona.bio = "Zona 1";
 
   print(persona.toString());
   print(persona.bio);
+  print(persona2.toString());
+  print(persona3.toString());
 }

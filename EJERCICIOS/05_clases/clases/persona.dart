@@ -32,8 +32,14 @@ class Persona {
   // }
 //LOS CONSTRUCTORES SE PUEDEN ENVIAR DE ESTA FORMA
   //Persona(this.edad,{this.nombre}); {para poner propiedad por nombre} {this.nombre='Jose Miguel'}
-  Persona(this.edad, this.nombre);
+  Persona(this.edad, {this.nombre});
   //Métodos son funciones pero al estar dentro de uan clase se conocen como métodos
+
+  /*Contructor con nombre se pueden crear cual quier cantidad de contructores por nombre*/
+
+  Persona.persona30(this.nombre) {
+    this.edad = 30;
+  }
 
   @override
 //override se un decorador que le dice a DART que debe sobrescribir el meotdo padre que es objet
